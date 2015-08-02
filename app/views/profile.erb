@@ -1,0 +1,26 @@
+<a href ='/'>
+	<input type= "button" value ="logout" class="btn btn-info btn-sm">
+</a>
+
+
+
+<div class= "proflie_pic">
+Welcome <%= @user.first_name %>!!
+</div>
+
+<div class = "post_comment">
+	<form action="/comment" method ="post" >	
+	<textarea id="text" name="comment" class="text_area"></textarea>
+	<a href = "/users/:id"><input type= "button" value ="post" class="btn btn-info btn-sm">
+	</form>
+</div>
+
+Cooments Sections
+<div class = "comments_section">
+
+</div>
+
+
+
+
+

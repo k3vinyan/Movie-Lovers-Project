@@ -65,3 +65,31 @@ code {
     margin-left: -1em;
     overflow: auto;
 }
+.top-header {
+    background: #87CEFA;
+}
+.signup {
+    border-style: solid;
+    text-align: center;
+}
+.login {
+    /*border-style: solid;
+    border-color: #87CEFA;
+    border-spacing: 10px;*/
+    margin-top: 40%;
+    /*margin: auto;*/
+    border-radius: 5px;
+    border-width: 10px;
+    text-align: left;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.text_area {
+    width: 300px;
+    height: 100px;
+    autofocus: on;
+    resize: none;
+}
+
