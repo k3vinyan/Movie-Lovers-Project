@@ -3,7 +3,7 @@
 end
 
 10.times do
-	Movie.create(title: Faker::Hacker.verb, description: Faker::Lorem.paragraph(2, 2))
+	Movie.create(title: Faker::Hacker.verb, poster: Faker::Avatar.image, 	description: Faker::Lorem.paragraph(2, 2))
 end
 	
 User.create(first_name: 'Admin', last_name: 'Amdin', username: 'Admin', password: '1234')

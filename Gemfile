@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.1'
 
 # PostgreSQL driver
 gem 'pg'
@@ -7,21 +8,22 @@ gem 'pg'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
-gem 'activesupport'
-gem 'activerecord'
-gem 'bcrypt-ruby'
+gem 'activesupport', '~>4.2.0'
+gem 'activerecord', '~>4.2.0'
 
 gem 'rake'
+gem 'sinatra-flash'
 
 gem 'shotgun'
-gem 'faker'
+gem 'pry'
+gem 'bcrypt'
 
 group :test do
-  gem 'database_cleaner', '~> 1.4.1'
   gem 'shoulda-matchers'
   gem 'rack-test'
-  gem 'rspec'
+  gem 'rspec', '~>3.0'
   gem 'capybara'
+  gem 'nyan-cat-formatter'
 end
 
 group :test, :development do
