@@ -1,0 +1,37 @@
+<a href ='/' class ="logout_button">
+	<input type= "button" value ="logout" class="btn btn-info btn-sm">
+	<% logout %>
+</a>
+
+Movie Display<p>	
+	<% if @movies %>
+	<% @movies.each do |movie| %>
+		<a href="/"><img src =<%= movie %> width = '75px'></img></a>
+	<% end %>
+<%end %>
+<p>
+
+<div class = "search_bar">
+	<form action = "/users/<%= params[:id]%>/movies" method ="post">
+	<input type = "search" name = "title"> <input type= "submit" value ="search" class="btn btn-default btn-sm">
+</div>
+
+<div class= "proflie_pic">
+		Welcome <%= current_user.username%>!!
+</div>
+
+
+Coments Sections
+<div class = "comments_section">
+	<% if @comments_section %>
+		<% @user.comments.reverse.each do |object| %>
+			<p>@<%=@user.username%> says:<%= object.comment %>
+		<% end %>
+	<% end %>
+</div>
+
+
+
+
+
+
